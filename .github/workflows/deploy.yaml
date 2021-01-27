@@ -26,7 +26,6 @@ jobs:
           npm run deploy -- --account-sid ${{secrets.TWILIO_ACCOUNT_SID}} --auth-token ${{secrets.TWILIO_AUTH_TOKEN}} --override-existing-project
         env:
           CI: true
-
 notify:
     runs-on: ubuntu-latest
     needs: deploy
